@@ -3,12 +3,15 @@ module.exports.config = {
   frameworkPath: 'node_modules/protractor-cucumber-framework',
 
   cucumberOpts: {
+    format: ['json:example.json'],
     require: ['features/support/**/*.js', 'features/step-definitions/**/*.js'],
     strict: true
   },
 
   capabilities: {
     browserName: 'chrome',
-    specs: 'features/**/*.feature'
+    specs: 'features/**/*.feature',
+    shardTestFiles: true,
+    maxInstances: 1
   }
 };
