@@ -10,8 +10,6 @@ module.exports.config = {
 
   capabilities: {
     browserName: 'chrome',
-    specs: 'features/**/*.feature',
-    shardTestFiles: true,
-    maxInstances: 1
+    specs: 'features/**/*.feature'
   }
 };
