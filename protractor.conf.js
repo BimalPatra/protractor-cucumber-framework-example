@@ -5,7 +5,8 @@ module.exports.config = {
   cucumberOpts: {
     format: ['json:example.json'],
     require: ['features/support/**/*.js', 'features/step-definitions/**/*.js'],
-    strict: true
+    strict: true,
+    'fail-fast': true
   },
 
   capabilities: {
